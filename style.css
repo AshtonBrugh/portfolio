@@ -3,10 +3,10 @@ body {
 }
 
 :root {
-    --sand: rgb(231, 223, 223);
+    --sand: rgb(218, 197, 207);
 }
 
-
+/*HEADER*/
 header {
     padding: 10px 10px;
     display: flex;
@@ -14,11 +14,11 @@ header {
     flex-wrap: wrap;
     background-color: var(--sand); 
     font-size: larger;
+    width: 99vw;
 }
 
 header h1 {
-    background-color: black;
-    color: var(--sand);
+    color: black;
     padding-left: 50px;
     padding-right: 5px;
     
@@ -45,5 +45,30 @@ header nav ul li a:hover {
     background: black;
     color: var(--sand);
     text-shadow: none;
+}
 
+/*HERO*/
+.hero {
+    background-image: url(../portfolio/thomas-verbruggen-5A06OWU6Wuc-unsplash.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 25%;
+}
+
+.hero h2 {
+    position: relative;
+    top: 75%;
+    left: 85%;
+    width: 100%;
+    color: black;
+    background: var(--sand);
+    font-size: 1.3vw;
+    font-style: italic;
 }
