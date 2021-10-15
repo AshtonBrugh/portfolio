@@ -80,7 +80,7 @@ header nav ul li a:hover {
 .section-title {
     display: flex;
     justify-content: flex-start;
-    align-items: space-between;
+    align-items: flex-start;
     border-top: 8vw;
 }
 
@@ -106,7 +106,7 @@ header nav ul li a:hover {
 .websites {
     display: flex;
     justify-content: flex-start;
-    align-items: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -129,10 +129,29 @@ header nav ul li a:hover {
     opacity: 1;
 }
 
-.smaller-site img {
+.work-img-smaller {
     transition: 0.5s linear;
-    border: var(--sand) 5px solid;
-    width: 12vw;
-    height:14vw;
+    border: var(--sand) 7px solid;
+    width: 15vw;
+    height: 18vw;
     opacity: 50%;
+}
+
+.work-img-smaller:hover {
+    transform: scale(1.2,1.2);
+    opacity: 1;
+}
+
+.contact-section p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size:1.6vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-section img {
+    width: 7.5vw;
+    height: 7vw;
 }
