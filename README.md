@@ -14,3 +14,8 @@ This website was built using HTML and CSS to achieve a working portfolio. In ord
 ## Screenshot
 
 <img src="portfolio.jpg">
+
+## Website URL
+
+https://ashtonbrugh.github.io/portfolio/
+
