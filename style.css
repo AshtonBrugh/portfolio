@@ -103,14 +103,24 @@ header nav ul li a:hover {
     height: 18vw;
 }
 
+
 .websites {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 }
+.websites-lead {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    gap: 5px 5px;
+}
 
-.websites h2 {
+.websites-lead h2 {
     font-size: 2.6vw;
     padding-left: 8vw;
     padding-right: 10vw;
@@ -119,8 +129,8 @@ header nav ul li a:hover {
 .work-img{
     transition: 0.5s linear;
     border: var(--sand) 7px solid;
-    width: 24vw;
-    height: 36vw;
+    width: 19vw;
+    height: 31vw;
     opacity: 50%;
 }
 
@@ -133,7 +143,7 @@ header nav ul li a:hover {
     transition: 0.5s linear;
     border: var(--sand) 7px solid;
     width: 15vw;
-    height: 18vw;
+    height: 15vw;
     opacity: 50%;
 }
 
@@ -154,4 +164,9 @@ header nav ul li a:hover {
 .contact-section img {
     width: 6.5vw;
     height: 6vw;
+}
+
+#work {
+    display: grid;
+    grid-template-columns: 45% 55%;
 }
