@@ -170,3 +170,44 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: 45% 55%;
 }
+
+@media screen and (max-width: 1528px){
+    .work-img {
+        transition: 0.5s linear;
+        border: var(--sand) 7px solid;
+        width: 15vw;
+        height: autovw;
+        opacity: 50%;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+        font-size: 2vw;
+        text-shadow: 0 0 10px rgba(0,0,0,0,5);
+        text-decoration: none;
+        color: black;
+        transition: 0.5s linear;
+    }  
+    
+    .hero {
+        background-image: url(../portfolio/thomas-verbruggen-5A06OWU6Wuc-unsplash.jpg);
+        background-repeat: none;
+        background-size: contain;
+        width: 100vw;
+        height: 20vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-attachment: fixed;
+    }
+
+    header {
+        padding:55px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: var(--sand); 
+        font-size: larger;
+        width: 92.5vw;
+    }
+}
