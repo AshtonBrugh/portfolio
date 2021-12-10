@@ -1,10 +1,9 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    
 }
 
-:root {
-    --sand: rgb(218, 197, 207);
-}
 
 /*HEADER*/
 header {
@@ -12,15 +11,16 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--sand); 
     font-size: larger;
     width: 99vw;
 }
 
 header h1 {
     color: black;
-    padding-left: 50px;
-    padding-right: 5px;
+    font-size: 5rem;
+    text-align: center;
+    
+
     
 }
 
@@ -35,7 +35,7 @@ header nav ul{
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     text-shadow: 0 0 10px rgba(0,0,0,0,5);
     text-decoration: none;
     color: black;
@@ -44,132 +44,79 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background: black;
-    color: var(--sand);
+    color: white;
     text-shadow: none;
 }
 
-/*HERO*/
-.hero {
-    background-image: url(../portfolio/thomas-verbruggen-5A06OWU6Wuc-unsplash.jpg);
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 20vw;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-attachment: fixed;
-    background-position: 25%;
-}
-
-.hero h2 {
-    position: relative;
-    top: 75%;
-    left: 85%;
-    width: 100%;
-    color: black;
-    background: var(--sand);
-    font-size: 1.3vw;
-    font-style: italic;
-}
 
 /*Sections*/
 
 
-.section-title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border-top: 8vw;
-}
-
-.section-title h2 {
-    font-size: 2.6vw;
-    padding-left: 8vw;
-    padding-right: 10vw;
-}
-
 .section-title p {
-    font-size: 1vw;
-    padding-top: 3vw;
-    padding-left: 3vw;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 3rem; */
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+    color: black;
 }
 
 .section-title img {
-    padding-top: 3vw;
-    padding-bottom: 7vw;
     width: 18vw;
     height: 18vw;
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    display: flex;
+    justify-content: center;
 }
 
 
 .websites {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-wrap: wrap;
-}
-.websites-lead {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 0px;
-    margin: 0px;
-    gap: 5px 5px;
+    justify-content: center;
 }
 
-.websites-lead h2 {
-    font-size: 2.6vw;
+.websites-lead h2, .section-title h2 {
+    display: flex;
+    font-size: 2.7rem;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    text-decoration: none;
     padding-left: 8vw;
     padding-right: 10vw;
+
 }
 
-.work-img{
-    transition: 0.5s linear;
-    border: var(--sand) 7px solid;
-    width: 19vw;
-    height: 31vw;
-    opacity: 50%;
-}
-
-.work-img:hover {
-    transform: scale(1.2,1.2);
-    opacity: 1;
-}
 
 .work-img-smaller {
     transition: 0.5s linear;
     border: var(--sand) 7px solid;
     width: 15vw;
     height: 15vw;
-    opacity: 50%;
 }
 
 .work-img-smaller:hover {
     transform: scale(1.2,1.2);
-    opacity: 1;
 }
 
-.contact-section p {
+.contact-section {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    font-size:1.6vw;
-    text-align: center;
-    text-decoration: none;
+    align-items: center;
+    padding-bottom: 5rem;
 }
-
 .contact-section img {
     width: 6.5vw;
     height: 6vw;
 }
 
-#work {
-    display: grid;
-    grid-template-columns: 45% 55%;
-}
 
 @media screen and (max-width: 1528px){
     .work-img {
@@ -177,7 +124,6 @@ header nav ul li a:hover {
         border: var(--sand) 7px solid;
         width: 15vw;
         height: autovw;
-        opacity: 50%;
     }
 
     header nav ul li a {
@@ -189,17 +135,6 @@ header nav ul li a:hover {
         transition: 0.5s linear;
     }  
     
-    .hero {
-        background-image: url(../portfolio/thomas-verbruggen-5A06OWU6Wuc-unsplash.jpg);
-        background-repeat: none;
-        background-size: contain;
-        width: 100vw;
-        height: 20vw;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        background-attachment: fixed;
-    }
 
     header {
         padding:55px;
